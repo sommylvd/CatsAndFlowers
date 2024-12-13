@@ -23,6 +23,22 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
         }
+        private void MeadowImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.WindowState = WindowState.Maximized; 
+            window1.Show();
+            this.Close();
+        }
+        private void ShopImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            // Открываем новое окно (Window2)
+            Window2 window2 = new Window2();
+            window2.Show();  // Показываем новое окно
+            this.Close();    // Закрываем текущее окно (по желанию)
+        }
+
     }
 }

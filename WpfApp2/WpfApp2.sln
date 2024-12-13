@@ -3,16 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{533FFE93-BFB4-40C9-AD83-FBEB64A0D5F8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{6A85A582-1F1D-4C31-9A5F-6FF8470F4EF8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B60D359-7084-4F1D-8DE4-1317D2C955D3}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\backgroundshop.png = ..\..\..\Desktop\backgroundshop.png
 		..\..\..\Desktop\forest.png = ..\..\..\Desktop\forest.png
 		..\..\..\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg = ..\..\..\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg
 		..\..\..\Desktop\grizly-club-p-fon-pixel-art-les-10.png = ..\..\..\Desktop\grizly-club-p-fon-pixel-art-les-10.png
 		..\..\..\Desktop\meodowe.png = ..\..\..\Desktop\meodowe.png
-		..\..\..\Desktop\shop290x248.png = ..\..\..\Desktop\shop290x248.png
 	EndProjectSection
 EndProject
 Global
@@ -21,15 +19,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533FFE93-BFB4-40C9-AD83-FBEB64A0D5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533FFE93-BFB4-40C9-AD83-FBEB64A0D5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533FFE93-BFB4-40C9-AD83-FBEB64A0D5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533FFE93-BFB4-40C9-AD83-FBEB64A0D5F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {119AA395-8EED-44E7-B215-4DED29719D3E}
+		SolutionGuid = {DE5AB336-65D5-4EEA-989D-F51906A63F04}
 	EndGlobalSection
 EndGlobal
