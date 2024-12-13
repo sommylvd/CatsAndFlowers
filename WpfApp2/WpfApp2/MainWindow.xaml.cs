@@ -24,5 +24,11 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;
+            this.Topmost = true;
+        }
+
     }
 }

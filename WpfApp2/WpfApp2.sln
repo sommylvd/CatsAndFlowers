@@ -5,6 +5,13 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{030FE596-0905-44EB-A901-11715B6C5044}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assetsCats", "assetsCats", "{1562363D-F70E-4FDA-B833-F44E78A0DF80}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\assetscats\backgroundshop.png = ..\..\..\Desktop\assetscats\backgroundshop.png
+		..\..\..\Desktop\assetscats\buy.png = ..\..\..\Desktop\assetscats\buy.png
+		..\..\..\Desktop\assetscats\exit.png = ..\..\..\Desktop\assetscats\exit.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

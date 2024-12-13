@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Image Source="assetsats\backgroundshop.png"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Stretch="UniformToFill"/>
         
+        <ComboBox x:Name="categoryComboBox" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top" 
+                  Margin="10" 
+                  Width="200">
+            <ComboBoxItem Content="Коты ремесленники" />
+            <ComboBoxItem Content="Коты собиратели" />
+            
+            <WrapPanel x:Name="productPanel" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="220,10,0,0">
+            </WrapPanel>
+        </ComboBox>
     </Grid>
 </Window>
