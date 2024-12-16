@@ -8,11 +8,11 @@
         Title="Window1" Height="450" Width="800"
         WindowState="Maximized" ResizeMode="NoResize">
     <Grid>
-        //<Image Source="C:\Users\PC\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg" 
+        <Image Source="C:\Users\PC\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg" 
                HorizontalAlignment="Stretch" 
                VerticalAlignment="Stretch" 
                Stretch="UniformToFill"/>
-        //<Image Source="C:\Users\PC\Desktop\forest.png" 
+        <Image Source="C:\Users\PC\Desktop\forest.png" 
                HorizontalAlignment="Left" VerticalAlignment="Bottom"
                Margin="10,0,0,10" Height="420" Width="260"
                MouseLeftButtonDown="OnForestImageClick"/>

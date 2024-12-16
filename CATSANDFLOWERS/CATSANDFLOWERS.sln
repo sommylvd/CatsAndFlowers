@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CATSANDFLOWERS", "CATSANDFLOWERS.csproj", "{A46AA3A1-603B-4E5A-8F8B-1A1296C48355}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{EDABC130-1294-4AC1-AF6C-9E4E3B573B01}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\assets\backgroundshop.png = ..\..\assets\backgroundshop.png
+		..\..\buy.png = ..\..\buy.png
+		..\..\exit.png = ..\..\exit.png
+		..\..\assets\forest.png = ..\..\assets\forest.png
+		..\..\assets\les.png = ..\..\assets\les.png
+		..\..\assets\meodowe.png = ..\..\assets\meodowe.png
+		..\..\assets\pole.jpg = ..\..\assets\pole.jpg
+		..\..\assets\shop290x248.png = ..\..\assets\shop290x248.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A46AA3A1-603B-4E5A-8F8B-1A1296C48355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46AA3A1-603B-4E5A-8F8B-1A1296C48355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46AA3A1-603B-4E5A-8F8B-1A1296C48355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46AA3A1-603B-4E5A-8F8B-1A1296C48355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81EB646A-78A8-4342-B028-089192054E11}
+	EndGlobalSection
+EndGlobal

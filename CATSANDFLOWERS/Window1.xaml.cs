@@ -12,17 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace CATSANDFLOWERS
 {
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
     /// </summary>
     public partial class Window1 : Window
     {
+
         public Window1()
         {
             InitializeComponent();
+
         }
+
         private void OnForestImageClick(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
@@ -30,6 +33,12 @@ namespace WpfApp1
             this.Close();
             mainWindow.Show();
         }
-
+        private void ShopImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.WindowState = WindowState.Maximized;
+            window2.Show();
+            this.Close();
+        }
     }
 }
