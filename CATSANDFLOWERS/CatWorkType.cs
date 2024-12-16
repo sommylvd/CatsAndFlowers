@@ -11,11 +11,11 @@ namespace CATSANDFLOWERS
         #region Fields
 
         private string _nameType; //возможно будет енам
-        private Workplace _workPlace;
+        private IWorkplace _workPlace;
         #endregion
         #region Properties 
         public string NameType=>_nameType;
-        public Workplace WorkPlace => _workPlace;
+        public IWorkplace WorkPlace => _workPlace;
         #endregion
     }
 }

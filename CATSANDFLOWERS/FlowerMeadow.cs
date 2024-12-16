@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CATSANDFLOWERS
 {
-    public class FlowerMeadow : Workplace
+    public class FlowerMeadow : IWorkplace
     {
         #region Fields
         private Bitmap _image;
@@ -17,5 +17,6 @@ namespace CATSANDFLOWERS
         public List<Cat> catsWorkers { get => _catsWorkersList; set => _catsWorkersList = value; }
         public Bitmap Image { get => _image; set => _image = value; }
         #endregion
+        
     }
 }

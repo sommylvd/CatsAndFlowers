@@ -13,14 +13,14 @@ namespace CATSANDFLOWERS
         private List<Flower> _flowersInStock;
         private List<Cat> _catsInStock;
         private string _name;
-        private Skill _skill;
+        private List<ISkill> _skills;
         #endregion
         #region Properties
         public double Money => _money;
         public List<Flower> FlowersInStock=>_flowersInStock;
         public List<Cat> CatsInStock => _catsInStock;
         public string Name => _name;
-        public Skill Skill => _skill;
+        public List<ISkill> Skills => _skills;
         #endregion
     }
 }

@@ -10,14 +10,27 @@ namespace CATSANDFLOWERS
     public class FlowerRarity
     {
         #region Fields
-        private string _rarityName; //будет енам
+        private FlowerRarityNaming _rarityName; //будет енам
         private double _boostPrice;
-        private double _detectionDifficulty;
+
+        public FlowerRarity(FlowerRarityNaming rarityName, double boostPrice)
+        {
+            _rarityName = rarityName;
+            _boostPrice = boostPrice;
+        }
+
+        //private double _detectionDifficulty;
         #endregion
         #region Properties
-        public string RarityName => _rarityName;
+        public FlowerRarityNaming RarityName => _rarityName;
         public double BoostPrice => _boostPrice;
-        public double DetectionDifficulty => _detectionDifficulty;
+        //public double DetectionDifficulty => _detectionDifficulty;
         #endregion
+    }
+    public enum FlowerRarityNaming
+    {
+        Common,
+        Rare,
+        Elite
     }
 }

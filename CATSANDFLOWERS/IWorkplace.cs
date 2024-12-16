@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CATSANDFLOWERS
 {
-    public interface Workplace
+    public interface IWorkplace
     {
         Bitmap Image { get; set; }
         List<Cat> catsWorkers { get; set; }

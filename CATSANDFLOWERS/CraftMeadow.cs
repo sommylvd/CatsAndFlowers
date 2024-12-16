@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CATSANDFLOWERS
 {
-    public class CraftMeadow : Workplace
+    public class CraftMeadow : IWorkplace
     {
         #region Fields
         private Bitmap _image;

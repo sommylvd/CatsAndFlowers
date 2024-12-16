@@ -11,8 +11,8 @@ namespace CATSANDFLOWERS
     {
         #region Properties
         public abstract int Id { get; set; }
-        public abstract string Type { get; set; } //Тип выполняемой работы котом 
-        public abstract string SkillLevel { get; set; } //Уровень квалификации
+        public abstract CatWorkType WorkType { get; set; } //Тип выполняемой работы котом 
+        public abstract CatQualification SkillLevel { get; set; } //Уровень квалификации
         public abstract int Price { get; set; }
         public abstract int WorkSpeed { get; set; } //Скорость
         public abstract int QuantityBoost { get; set; } //Количество

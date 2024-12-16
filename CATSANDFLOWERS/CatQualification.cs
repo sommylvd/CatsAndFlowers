@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace CATSANDFLOWERS
 {
-    public class CatRarity
+    public class CatQualification
     {
         #region Fields
-        private string _rarityName; //будет енам
+        private CatQualificationNames _qualificationName; 
         private int _price;
         private int _workSpeed;
         #endregion
         #region Properties
-        public string RarityName=>_rarityName;
+        public CatQualificationNames QualificationName => _qualificationName;
         public int Price => _price;
         public int WorkSpeed => _workSpeed;
         #endregion
+    }
+   public enum CatQualificationNames
+    {
+        Beginner,
+        Advanced,
+        Professional,
+        Master
     }
 }
