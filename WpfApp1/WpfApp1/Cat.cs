@@ -11,6 +11,7 @@ namespace WpfApp1
     {
         #region Properties
         public abstract int Id { get; set; }
+        public abstract string Name { get; set; }
         public abstract CatWorkType WorkType { get; set; } //Тип выполняемой работы котом 
         public abstract CatQualification SkillLevel { get; set; } //Уровень квалификации
         public abstract int Price { get; set; }

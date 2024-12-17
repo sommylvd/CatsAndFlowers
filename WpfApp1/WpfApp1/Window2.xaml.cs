@@ -22,6 +22,10 @@ namespace WpfApp1
         public Window2()
         {
             InitializeComponent();
+            ImageBrush myBrushShop = new ImageBrush();
+            myBrushShop.ImageSource =
+                new BitmapImage(new Uri("C:\\Users\\STUDENT\\Documents\\CatsAndFlowers\\WpfApp1\\WpfApp1\\assetscats\\backgroudsshop.png", UriKind.Absolute));
+            this.Background = myBrushShop;
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

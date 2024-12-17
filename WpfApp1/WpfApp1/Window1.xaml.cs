@@ -22,6 +22,10 @@ namespace WpfApp1
         public Window1()
         {
             InitializeComponent();
+            ImageBrush myBrushMeadow = new ImageBrush();
+            myBrushMeadow.ImageSource =
+                new BitmapImage(new Uri("C:\\Users\\STUDENT\\Documents\\CatsAndFlowers\\WpfApp1\\WpfApp1\\assetscats\\projcats\\meadow.jpg", UriKind.Absolute));
+            this.Background = myBrushMeadow;
         }
         private void OnForestImageClick(object sender, RoutedEventArgs e)
         {

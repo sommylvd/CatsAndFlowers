@@ -24,6 +24,11 @@ namespace WpfApp1
         {
             InitializeComponent();
             DataContext = this;
+            ImageBrush myBrush = new ImageBrush();
+            myBrush.ImageSource =
+                new BitmapImage(new Uri("C:\\Users\\STUDENT\\Documents\\CatsAndFlowers\\WpfApp1\\WpfApp1\\assetscats\\projcats\\forest.png", UriKind.Absolute));
+            this.Background = myBrush;
+            
         }
         private void MeadowImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
