@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,12 +56,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Cat.cs" />
+    <Compile Include="CatQualification.cs" />
+    <Compile Include="CatWorkType.cs" />
+    <Compile Include="ClassShop.cs" />
+    <Compile Include="CraftMeadow.cs" />
+    <Compile Include="Flower.cs" />
+    <Compile Include="FlowerMeadow.cs" />
+    <Compile Include="FlowerRarity.cs" />
+    <Compile Include="ISkill.cs" />
+    <Compile Include="IWorkplace.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Wreath.cs" />
+    <Compile Include="WreathType.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
