@@ -8,7 +8,7 @@ namespace WpfApp1
 {
     public interface ISkill
     {
-        string SkillName { get; } //будущий енам
+        SkillName SkillName { get; } //будущий енам
         CatQualificationNames SkillLevel { get; set; }
         double SkillValue { get; set; }
     }
@@ -16,16 +16,39 @@ namespace WpfApp1
     {
         private CatQualificationNames _skillLevel;
         private double _skillValue;
-        public string SkillName { get => "FlowersPicking"; }
+        public FlowersPicking(CatQualificationNames skillLevel, double skillValue)
+        {
+            _skillLevel = skillLevel;
+            _skillValue = skillValue;
+        }
+        public SkillName SkillName { get => SkillName.FlowersPicking; }
         public CatQualificationNames SkillLevel { get => _skillLevel; set => _skillLevel = value; }
         public double SkillValue { get => _skillValue; set => _skillValue = value; }
     }
-    public class WreathWeaving : ISkill
+    public class WreathWeaving : ISkill 
     {
         private CatQualificationNames _skillLevel;
         private double _skillValue;
-        public string SkillName { get => "WreathWeaving"; }
+        public WreathWeaving(CatQualificationNames skillLevel, double skillValue)
+        {
+            _skillLevel = skillLevel;
+            _skillValue = skillValue;
+        }
+        public SkillName SkillName { get => SkillName.WreathWeaving; }
         public CatQualificationNames SkillLevel { get => _skillLevel; set => _skillLevel = value; }
         public double SkillValue { get => _skillValue; set => _skillValue = value; }
     }
+    public enum CatQualificationNames
+    {
+        Beginner,
+        Advanced,
+        Professional,
+        Master
+    }
+    public enum SkillName
+    {
+        FlowersPicking,
+        WreathWeaving
+    }
+
 }

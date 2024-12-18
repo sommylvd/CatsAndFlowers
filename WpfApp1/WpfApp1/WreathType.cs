@@ -9,14 +9,48 @@ namespace WpfApp1
     public class WreathType
     {
         #region Fields
-        private string _nameType; //будет енам
-        private int _details; //не придумали еще
-        private List<Flower> _flowersRequirements;
+        private WreathTypeName _nameType;
+        private int _numberOfDetails; //не придумали еще
+        private Dictionary<FlowerRarityNaming, int> _flowerRequirements;
         #endregion
         #region Properties
-        public string NameType => _nameType;
-        public int Details => _details;
-        public List<Flower> FlowersRequirements => _flowersRequirements;
+        public WreathTypeName NameType => _nameType;
+        public int Details => _numberOfDetails;
+        public Dictionary<FlowerRarityNaming, int> FlowersRequirements => _flowerRequirements;
         #endregion
+        public WreathType(WreathTypeName wreathType)
+        {
+            switch (wreathType)
+            {
+                case WreathTypeName.Easy:
+                    _nameType = WreathTypeName.Easy;
+                    _flowerRequirements = new Dictionary<FlowerRarityNaming, int> {
+                        { FlowerRarityNaming.Common,6 }
+                    };
+                    break;
+                case WreathTypeName.Medium:
+                    _nameType = WreathTypeName.Medium;
+                    _flowerRequirements = new Dictionary<FlowerRarityNaming, int> {
+                        { FlowerRarityNaming.Common,6 },
+                        {FlowerRarityNaming.Rare,4 }
+                    };
+                    break;
+                case WreathTypeName.Hard:
+                    _nameType = WreathTypeName.Hard;
+                    _flowerRequirements = new Dictionary<FlowerRarityNaming, int> {
+                        { FlowerRarityNaming.Common,4 },
+                        {FlowerRarityNaming.Rare,6 },
+                        {FlowerRarityNaming.Elite,2 }
+                    };
+                    break;
+            }
+        }
+    }
+    public enum WreathTypeName
+    {
+        Easy,
+        Medium,
+        Hard
     }
 }
+

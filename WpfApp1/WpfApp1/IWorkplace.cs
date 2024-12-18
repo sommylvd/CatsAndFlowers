@@ -9,7 +9,13 @@ namespace WpfApp1
 {
     public interface IWorkplace
     {
+        WorkPlaceName WorkPlaceName { get; }
         Bitmap Image { get; set; }
         List<Cat> catsWorkers { get; set; }
+    }
+    public enum WorkPlaceName
+    {
+        FlowerMeadow,
+        CraftMeadow
     }
 }

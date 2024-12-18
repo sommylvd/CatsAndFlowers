@@ -11,13 +11,11 @@ namespace WpfApp1
         #region Fields
         private FlowerRarityNaming _rarityName; //будет енам
         private double _boostPrice;
-
         public FlowerRarity(FlowerRarityNaming rarityName, double boostPrice)
         {
             _rarityName = rarityName;
             _boostPrice = boostPrice;
         }
-
         //private double _detectionDifficulty;
         #endregion
         #region Properties

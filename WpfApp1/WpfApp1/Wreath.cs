@@ -21,5 +21,30 @@ namespace WpfApp1
         public int Price => _price;
         public Bitmap WreathImage => _wreathImage;
         #endregion
+        public Wreath(WreathTypeName wreathTypeName, int id)
+        {
+            switch (wreathTypeName)
+            {
+                case WreathTypeName.Easy:
+                    _id = id;
+                    _wreathType = new WreathType(wreathTypeName);
+                    _price = 30;
+                    _wreathImage = null;
+                    break;
+                case WreathTypeName.Medium:
+                    _id = id;
+                    _wreathType = new WreathType(wreathTypeName);
+                    _price = 60;
+                    _wreathImage = null;
+                    break;
+                case WreathTypeName.Hard:
+                    _id = id;
+                    _wreathType = new WreathType(wreathTypeName);
+                    _price = 90;
+                    _wreathImage = null;
+                    break;
+            }
+        }
     }
 }
+

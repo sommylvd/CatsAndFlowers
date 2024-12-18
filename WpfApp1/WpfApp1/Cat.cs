@@ -7,20 +7,46 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    public abstract class Cat
+    public class Cat
     {
         #region Properties
-        public abstract int Id { get; set; }
-        public abstract string Name { get; set; }
-        public abstract CatWorkType WorkType { get; set; } //Тип выполняемой работы котом 
-        public abstract CatQualification SkillLevel { get; set; } //Уровень квалификации
-        public abstract int Price { get; set; }
-        public abstract int WorkSpeed { get; set; } //Скорость
-        public abstract int QuantityBoost { get; set; } //Количество
-        public abstract Bitmap Image { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public WorkPlaceName WorkType { get; set; } // Тип выполняемой работы котом 
+        public CatQualification SkillLevel { get; set; } // Уровень квалификации
+        public double Price { get; set; }
+        public int WorkSpeed { get; set; } // Скорость
+        public double QuantityBoost { get; set; } // Количество
+        public Bitmap Image { get; set; }
         #endregion
         #region Methods
-        public abstract void GetInfo();
+        public void GetInfo() { }
         #endregion
+        public Cat(CatQualificationNames qualificationNames, WorkPlaceName workPlaceName, string name, int id)
+        {
+            if (workPlaceName == WorkPlaceName.FlowerMeadow)
+            {
+                Id = id;
+                Name = name;
+                WorkType = workPlaceName;
+                SkillLevel = new CatQualification(SkillName.FlowersPicking, qualificationNames);
+                Price = 200 * SkillLevel.Price;
+                WorkSpeed = SkillLevel.WorkSpeed;
+                QuantityBoost = SkillLevel.QualificationName.SkillValue;
+                Image = null;
+            }
+            else if (workPlaceName == WorkPlaceName.CraftMeadow)
+            {
+                Id = id;
+                Name = name;
+                WorkType = workPlaceName;
+                SkillLevel = new CatQualification(SkillName.WreathWeaving, qualificationNames);
+                Price = 200 * SkillLevel.Price;
+                WorkSpeed = SkillLevel.WorkSpeed;
+                QuantityBoost = SkillLevel.QualificationName.SkillValue;
+                Image = null;
+            }
+        }
     }
 }
+

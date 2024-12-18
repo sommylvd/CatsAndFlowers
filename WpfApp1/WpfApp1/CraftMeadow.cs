@@ -16,6 +16,7 @@ namespace WpfApp1
         #region Properties
         public List<Cat> catsWorkers { get => _catsWorkersList; set => _catsWorkersList = value; }
         public Bitmap Image { get => _image; set => _image = value; }
+        public WorkPlaceName WorkPlaceName => WorkPlaceName.CraftMeadow;
         #endregion
     }
 }

@@ -46,4 +46,6 @@ namespace WpfApp1
             return new Flower(FlowerRarityNaming.Common, 9999);
         }
     }
+
 }
+
