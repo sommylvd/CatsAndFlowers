@@ -127,5 +127,47 @@
   <ItemGroup>
     <Resource Include="backgroundshop.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="meodowe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="shopbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="meadow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="foresttable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backmagaz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="les.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dfhging.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kyst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="svetzel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="svetjel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="svetroz.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

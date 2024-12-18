@@ -8,17 +8,25 @@
         Title="Window1" Height="450" Width="800"
         WindowState="Maximized" ResizeMode="NoResize">
     <Grid>
-        <Image Source="C:\Users\PC\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg" 
-               HorizontalAlignment="Stretch" 
+        <Image HorizontalAlignment="Stretch" 
                VerticalAlignment="Stretch" 
-               Stretch="UniformToFill"/>
-        <Image Source="C:\Users\PC\Desktop\forest.png" 
-               HorizontalAlignment="Left" VerticalAlignment="Bottom"
-               Margin="10,0,0,10" Height="420" Width="260"
-               MouseLeftButtonDown="OnForestImageClick"/>
+               Stretch="UniformToFill" 
+               Source="meadow.jpg" 
+               RenderTransformOrigin="0.423,0.582"/>
+        <Image HorizontalAlignment="Right" 
+               VerticalAlignment="Top" 
+               Margin="0,10,-3,0" 
+               Height="300" 
+               Width="363"
+               MouseLeftButtonDown="ShopImage_MouseLeftButtonDown"
+               Source="shopbutton.png"/>
+        <Image HorizontalAlignment="Left" 
+               VerticalAlignment="Bottom"
+               Margin="10,0,0,10" 
+               Height="420" 
+               Width="260" 
+               MouseLeftButtonDown="OnForestImageClick" 
+               Source="foresttable.png"/>
 
-        <Image Source="C:\Users\PC\Desktop\shop290x248.png" 
-               HorizontalAlignment="Right" VerticalAlignment="Top" 
-               Margin="0,10,-3,0" Height="300" Width="363"/>
     </Grid>
 </Window>

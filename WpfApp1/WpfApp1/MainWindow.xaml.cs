@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WpfApp1
 {
@@ -20,15 +21,16 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DispatcherTimer _timer;
         public MainWindow()
         {
             InitializeComponent();
             DataContext = this;
-            ImageBrush myBrush = new ImageBrush();
-            myBrush.ImageSource =
-                new BitmapImage(new Uri("C:\\Users\\STUDENT\\Documents\\CatsAndFlowers\\WpfApp1\\WpfApp1\\assetscats\\projcats\\forest.png", UriKind.Absolute));
-            this.Background = myBrush;
-            
+            _timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(0.09) // Интервал
+            };
+            _timer.Tick += Timer_Tick;
         }
         private void MeadowImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
@@ -39,11 +41,20 @@ namespace WpfApp1
         }
         private void ShopImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            // Открываем новое окно (Window2)
             Window2 window2 = new Window2();
-            window2.Show();  // Показываем новое окно
-            this.Close();    // Закрываем текущее окно (по желанию)
+            window2.Show();
+            this.Close();
         }
-
+        private void BushImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            SvetzelImage.Visibility = Visibility.Visible;
+            _timer.Stop(); 
+            _timer.Start();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            SvetzelImage.Visibility = Visibility.Collapsed;
+            _timer.Stop();
+        }
     }
 }

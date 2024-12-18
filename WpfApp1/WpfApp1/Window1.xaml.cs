@@ -22,10 +22,6 @@ namespace WpfApp1
         public Window1()
         {
             InitializeComponent();
-            ImageBrush myBrushMeadow = new ImageBrush();
-            myBrushMeadow.ImageSource =
-                new BitmapImage(new Uri("C:\\Users\\STUDENT\\Documents\\CatsAndFlowers\\WpfApp1\\WpfApp1\\assetscats\\projcats\\meadow.jpg", UriKind.Absolute));
-            this.Background = myBrushMeadow;
         }
         private void OnForestImageClick(object sender, RoutedEventArgs e)
         {
@@ -33,6 +29,12 @@ namespace WpfApp1
             mainWindow.WindowState = WindowState.Maximized;
             this.Close();
             mainWindow.Show();
+        }
+        private void ShopImage_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
         }
 
     }
