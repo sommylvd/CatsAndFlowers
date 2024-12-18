@@ -16,7 +16,7 @@ namespace WpfApp1
         private List<ISkill> _skills;
         #endregion
         #region Properties
-        public double Money => _money;
+        public double Money { get => _money; set => _money= value; }
         public List<Flower> FlowersInStock => _flowersInStock;
         public List<Cat> CatsInStock => _catsInStock;
         public string Name => _name;
