@@ -64,6 +64,7 @@
     <Compile Include="Flower.cs" />
     <Compile Include="FlowerMeadow.cs" />
     <Compile Include="FlowerRarity.cs" />
+    <Compile Include="GameProcess.cs" />
     <Compile Include="ISkill.cs" />
     <Compile Include="IWorkplace.cs" />
     <Compile Include="Player.cs" />

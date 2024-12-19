@@ -22,6 +22,14 @@ namespace WpfApp1
         public string Name => _name;
         public List<ISkill> Skills => _skills;
         #endregion
+        public Player(string name)
+        {
+            _money = 0;
+            _name = name;
+            _flowersInStock = new List<Flower>();
+            _catsInStock = new List<Cat>();
+            _skills = new List<ISkill>() {new FlowersPicking(CatQualificationNames.Beginner,1) };
+        }
         public Dictionary<FlowerRarityNaming, int> InfoFlower()
         {
             Dictionary<FlowerRarityNaming, int> infoFlowers = new Dictionary<FlowerRarityNaming, int>();
