@@ -40,5 +40,12 @@
                Width="363"
                Source="buy.png" 
                MouseLeftButtonDown="BuyImage_MouseLeftButtonDown"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="250,120,0,0" VerticalAlignment="Top" Width="320" Source="/1.gif" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="570,120,0,0" VerticalAlignment="Top" Width="320" Source="/2.gif" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="890,120,0,0" VerticalAlignment="Top" Width="320" Source="/3.gif" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="250,440,0,0" VerticalAlignment="Top" Width="320" Source="/4.gif" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="570,440,0,0" VerticalAlignment="Top" Width="320" Source="/5.gif" Stretch="UniformToFill"/>
+        <Image HorizontalAlignment="Left" Height="320" Margin="890,440,0,0" VerticalAlignment="Top" Width="320" Source="/6.gif" Stretch="UniformToFill"/>
     </Grid>
+
 </Window>

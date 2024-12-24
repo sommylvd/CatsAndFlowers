@@ -169,5 +169,26 @@
   <ItemGroup>
     <Resource Include="svetroz.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="transparent-jasmine-flower-64892b344f76e9.7433298416867110923255 %281%29 %281%29 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
