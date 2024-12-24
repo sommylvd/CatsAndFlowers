@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{6A85A582-1F1D-4C31-9A5F-6FF8470F4EF8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\backgroundshop.png = ..\..\..\Desktop\backgroundshop.png
+		..\..\..\Desktop\forest.png = ..\..\..\Desktop\forest.png
+		..\..\..\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg = ..\..\..\Desktop\fundo-de-paisagem-rural-de-pixel-art_52683-125366.jpg
+		..\..\..\Desktop\grizly-club-p-fon-pixel-art-les-10.png = ..\..\..\Desktop\grizly-club-p-fon-pixel-art-les-10.png
+		..\..\..\Desktop\meodowe.png = ..\..\..\Desktop\meodowe.png
+		..\..\..\Desktop\shop290x248.png = ..\..\..\Desktop\shop290x248.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5A206A-94CB-4814-9D6B-F7EA1DDD9B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {119AA395-8EED-44E7-B215-4DED29719D3E}
+	EndGlobalSection
+EndGlobal

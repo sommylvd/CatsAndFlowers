@@ -41,7 +41,6 @@ namespace WpfApp1
                     rand = _random.Next(0, 100);
                     if (rand < 60) return new Flower(FlowerRarityNaming.Rare, _flowerId);
                     else return new Flower(FlowerRarityNaming.Elite, _flowerId);
-
             }
             return new Flower(FlowerRarityNaming.Common, 9999);
         }
