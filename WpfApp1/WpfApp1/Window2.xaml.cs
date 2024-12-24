@@ -41,5 +41,6 @@ namespace WpfApp1
         {
             MessageBox.Show("Кнопка нажата, но пока ничего не происходит ");
         }
+        
     }
 }
